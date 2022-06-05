@@ -2,8 +2,98 @@
 
 .header{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: rgba(6, 7, 8, 0.1) 0px 10px 10px -10px;
+
 }
 
-.header-right{
-    flex-direction: flex-end;
+/* .header-right{
+    display: flex;
+} */
+
+#offer{
+    margin: -5px;
+    letter-spacing: 1px;
+}
+
+.header a {
+    
+    float: left;
+    color: black;
+    text-align: center;
+    padding-left: 25px;
+    text-decoration: none;
+    margin: 22px;
+    line-height: 1.2;
+    /* letter-spacing: 0.4pt; */
+    font-weight: 500;
+  }
+
+
+  .header a:hover {
+    color: rgb(243, 126, 36);
+  }
+
+  #slogo-img{
+    position: absolute;
+    width: 33px;
+    margin: 5px -15px;
+   }
+
+   a i{
+    padding: 5px;
+    font-size: x-large;
+}
+
+
+   span{
+       color: black;
+       text-decoration: 3px  underline;
+       text-underline-offset: 5px;
+       font-size: 16px;
+       font-weight: 400;
+   }
+   span:hover{
+    color: rgb(243, 126, 36);
+   }
+
+ #logo{
+    color: rgb(102, 101, 103);
+    font-size: 14px;
+}
+  
+
+@media screen and (max-width: 500px) {
+
+    .header a {
+      display: flex;
+      text-align: left;
+    }
+    
+    .header-right {
+      float: none;
+    }
+  }
+  
+@media screen and (max-width: 600px) {
+  .header-right a:not(:first-child) {display: none;}
+  .topheader-rightnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header-right.responsive {position: relative;}
+  .header-right.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .header-right.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }
