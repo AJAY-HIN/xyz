@@ -7,6 +7,8 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <link rel="stylesheet" href="./css/style1.css" />
+   <link rel="stylesheet" href="./css/corusel.css" />
+
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css" integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link rel="icon" type="image/x-icon" href="swiggy-1.svg">
@@ -35,7 +37,25 @@
 
 
 
-       <section class="product"> 
+
+
+   <div class="container">
+    <div class="carousel">
+      <div class="slider">
+        <section>Content section 1</section>
+        <section>Content section 2</section>
+        <section>Content section 3</section>
+        <section>Content section 4</section>
+      </div>
+     
+    </div>
+    <div class="controls" >
+        <button class="next"><i class="fa fa-arrow-right-long"></i></button>
+        <button class="prev"><i class="fa fa-arrow-left-long"></i></button>
+      </div>
+  </div>
+
+   <!--    <section class="product"> 
         <button class="pre-btn"><img src="images/arrow.png" alt=""></button>
         <button class="nxt-btn"><img src="images/arrow.png" alt=""></button>
         <div class="product-container">
@@ -79,9 +99,10 @@
             </div>
          
         </div>
-    </section>
+    </section> -->
 
 
     <script src="./js/script.js"></script>
+    <script src="./js/corusel.js"></script>
  </body>
 </html>

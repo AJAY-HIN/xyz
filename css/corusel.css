@@ -1,0 +1,74 @@
+.container {
+    width: 100%;
+  }
+  .carousel {
+    background: #1a1638;
+    border-radius: 5px;
+    width: 80%;
+    height: 300px;
+    display: flex;
+    left:10%;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+  }
+  .slider {
+    display: flex;
+    height: 100%;
+    width: 500%;
+    flex : 1 1 auto;
+    transition: all 0.2s;
+  
+  }
+  section {
+    flex-basis: 25%;
+    width: 70%;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+  }
+  .controls button.next {
+    position: absolute;
+    right: 20px;
+    top: 126px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color:black;
+  }
+
+  
+
+  .controls button.next:hover{
+    background-color: rgb(155, 168, 179);
+    transition: all 0.5s;
+  }
+
+  .controls button.prev:hover{
+    background-color: rgb(155, 168, 179);
+    transition: all 0.5s;
+
+}
+
+
+  .controls button.prev {
+    position: absolute;
+    left: 20px;
+    top: 126px;
+    font-weight: -100;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: black;
+  }
+  .controls button i {
+    font-size: 25px;
+  }
