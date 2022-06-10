@@ -15,8 +15,9 @@
 
 
  .navbar {
+  position: sticky;
   display: flex;
-  /* align-items: center; */
+  z-index: 1;
   justify-content: space-between;
   padding: 20px;
   background-color: white;
@@ -102,7 +103,7 @@ color: rgb(243, 126, 36);
     position: absolute;
     width: 33px;
     margin-left: 8% ;
-    margin-top: -7px;
+    margin-top: -111px;
 
    }
 
@@ -153,6 +154,7 @@ margin-left: 9rem;
  }
  .hamburger {
   display: block;
+  z-index: 1;
  }
  .dropdown {
   left: 50%;

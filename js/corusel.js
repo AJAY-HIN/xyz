@@ -7,17 +7,17 @@ let direction;
 
 next.addEventListener('click', function() {
   direction = -1;
-  carousel.style.justifyContent = 'flex-start';
-  slider.style.transform = 'translate(-20%)';  
+  carousel.style.justifyContent = 'center';
+  slider.style.transform = 'translate(-12%)';  
 });
 
 prev.addEventListener('click', function() {
-  if (direction === -1) {
+  if (direction !== -1) {
     direction = 1;
-    slider.appendChild(slider.firstElementChild);
+    slider.appendChild(slider.lastElementChild);
   }
-  carousel.style.justifyContent = 'flex-end';    
-  slider.style.transform = 'translate(20%)';  
+  carousel.style.justifyContent = 'center';    
+  slider.style.transform = 'translate(12%)';  
   
 });
 
@@ -33,6 +33,33 @@ slider.addEventListener('transitionend', function() {
   slider.style.transition = 'none';
   slider.style.transform = 'translate(0)';
   setTimeout(() => {
-    slider.style.transition = 'all 0.2s';
+    slider.style.transition = 'all 0.3s';
   })
 }, false);
+
+
+
+const getCarousalData = async ()=>{
+  try{
+  let response = await fetch('http://training.panorbitprojects.com/api/GetCarousalData/')
+  return await response.json();
+} catch (error) {
+  console.log(error);
+}
+}
+
+const renderImage = async () => {
+  let image = await getCarousalData();
+  let html = "";
+  console.log(image.data);
+  image.data.map(imgs => {
+    let apiImages = `<img src="${imgs.backgroundImage}" >`;
+
+    html += apiImages;
+  });
+
+  let slider = document.querySelector('.slider');
+  slider.innerHTML = html;
+}
+
+renderImage();

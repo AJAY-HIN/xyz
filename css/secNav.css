@@ -1,0 +1,40 @@
+nav.secnavbar{
+    display: flex;
+    background-color: white;
+    padding-top:35px;
+    padding-bottom: 10px;
+}
+
+.counts{
+    position: relative;
+    font-size: 22px;
+    left: 13%;
+}
+
+hr{
+    position: relative;
+    left:12%;
+    right: 12%;
+    width: 76%;
+    background-color: white;
+}
+
+
+.secnav-links{
+  display: flex;
+  align-items: center;
+}
+
+
+.menu{
+    margin-left: 350px;
+}
+
+.secli{
+    color: #282c3f;
+    font-size: 14px;
+    font-weight: 100;
+    margin-left:-35px;
+    margin-right: 10px;
+}
+
