@@ -1,99 +1,92 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
- <head>
-   <meta charset="UTF-8" />
-   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <link rel="stylesheet" href="./css/style1.css" />
-   <link rel="stylesheet" href="./css/corusel.css" />
-   <link rel="stylesheet" href="./css/secNav.css" />
-   <link rel="stylesheet" href="./css/card.css" />
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css" integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <link rel="icon" type="image/x-icon" href="swiggy-1.svg">
-   <title>Order food</title>
 
- </head>
- <body>
-   <nav class="navbar">
-     <div id="logocity">
-      <img id="slogo-img" src="swiggy-1.svg" alt="logo-image"> 
-      <a  href="#default" id="logo"><span>Other</span>  Kurukshetra,Haryana,India</a> 
-     </div>
-           
-     <ul class="nav-links">
-       <input type="checkbox" id="checkbox_toggle" style="display: none;" />
-       <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-       <div class="menu">
-         <li><a href="/"><i class="fa fa-search"></i>Search</a></li>
-         <li><a href="/"><i class="fa fa-percent"></i>Offer <sup style="color: rgb(255, 136, 0); font-weight:bold;">New</sup> </a></li>
-         <li><a href="/"><i class="fa fa-person"></i>Help</a></li>
-         <li><a href="/"><i class="fa fa-user"></i>Sign in</a></li>
-         <li><a href="/"><i class="fa fa-cart-shopping"></i>Cart</a></li>
-       </div>
-     </ul>
-   </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style1.css" />
+  <link rel="stylesheet" href="./css/corusel.css" />
+  <link rel="stylesheet" href="./css/secNav.css" />
+  <link rel="stylesheet" href="./css/card.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css"
+    integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+  <link rel="icon" type="image/x-icon" href="swiggy-1.svg">
+  <title>Order food</title>
 
+</head>
 
-
-<!-- 
-   <div class="container">
-    <div class="carousel">
-      <div class="slider">
-      </div>
-     
+<body>
+  <nav class="navbar">
+    <div id="logocity">
+      <img id="slogo-img" src="swiggy-1.svg" alt="logo-image">
+      <a href="#default" id="logo"><span>Other</span> Kurukshetra,Haryana,India</a>
     </div>
-    <div class="controls" >
-        <button class="next"><i class="fa fa-arrow-right-long"></i></button>
-        <button class="prev"><i class="fa fa-arrow-left-long"></i></button>
-      </div>
-  </div> -->
 
-  <div class="container">
-    <div class="carousel">
-      <div class="slider">
-      </div>
-    </div>
-    <div class="controls">
-      <button class="next"><i class="bi bi-arrow-right-short"></i></button>
-      <button class="prev"><i class="bi bi-arrow-left-short"></i></button>
-    </div>
-  </div>
-
-  <nav class="secnavbar">          
-    <ul class="secnav-links">
-      <div class="counts">
-        <h1>Count restaurants</h1>
-      </div>
+    <ul class="nav-links">
+      <input type="checkbox" id="checkbox_toggle" style="display: none;" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
       <div class="menu">
-        <li class="secli">Relevance</li>
-        <li class="secli">Delivery Time</li>
-        <li class="secli">Rating</li>
-        <li class="secli">Cost: Low To High</li>
-        <li class="secli">Cost: High To Low</li>
-        <li class="secli" style="color: black; font-size:16px;">Filters</li>
+        <li><a href="/"><i class="fa fa-search"></i>Search</a></li>
+        <li><a href="/"><i class="fa fa-percent"></i>Offer <sup
+              style="color: rgb(255, 136, 0); font-weight:bold;">New</sup> </a></li>
+        <li><a href="/"><i class="fa fa-person"></i>Help</a></li>
+        <li><a href="/"><i class="fa fa-user"></i>Sign in</a></li>
+        <li><a href="/"><i class="fa fa-cart-shopping"></i>Cart</a></li>
       </div>
     </ul>
   </nav>
-  <hr style="color: white;">
-  
-  <div class="cardWrapper">
-    <div class="card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg" alt="foodimage">
-        <div class="details">
-          <h3>Banofee</h3>
-          <blockquote>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure odio quasi voluptates corrupti saepe sit expedita error earum quidem distinctio?</blockquote>
-        </div>
-    </div>
 
+
+
+
+
+  <div class="parentContainer">
+    <div class="container">
+      <div class="carousel">
+        <div class="slider">
+        </div>
+      </div>
+      <div class="controls">
+        <button class="next"><i class="bi bi-arrow-right-short"></i></button>
+        <button class="prev"><i class="bi bi-arrow-left-short"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="scrollmenu">
+    <div class="counts">
+      
+    </div>
+    <div class="secNavList">
+     <a href="#" style="text-decoration: underline; text-underline-offset: 8px;" >Relevance</a>
+    <a href="#">Delivery Time</a>
+    <a href="#">Logo</a>
+    <a href="#">Rating</a>
+    <a href="#">Cost: Low To High</a>
+    <a href="#">Cost: High To Low</a>
+    <a href="#" style="font-weight: bold;">Filters <i class="fa fa-filter"></i></a>
+
+    </div>
   </div>
 
 
-    <script src="./js/script.js"></script>
-    <script src="./js/corusel.js"></script>
- </body>
+  <div class="myData">
+    <div class="outWrapper">
+
+
+    </div>
+  </div>
+
+
+  <script src="./js/script.js"></script>
+  <script src="./js/corusel.js"></script>
+  <script src="./js/card.js"></script>
+  <script src="./js/secnav.js"></script>
+</body>
+
 </html>

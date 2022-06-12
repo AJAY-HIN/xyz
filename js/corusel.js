@@ -8,16 +8,17 @@ let direction;
 next.addEventListener('click', function() {
   direction = -1;
   carousel.style.justifyContent = 'center';
-  slider.style.transform = 'translate(-12%)';  
+  slider.style.transform = 'translate(-12.38%)';  
 });
 
 prev.addEventListener('click', function() {
-  if (direction !== -1) {
-    direction = 1;
-    slider.appendChild(slider.lastElementChild);
-  }
+  // if (direction !== -1) {
+  //   direction = 1;
+  //   slider.appendChild(slider.lastElementChild);
+  // }
+  direction = 1;
   carousel.style.justifyContent = 'center';    
-  slider.style.transform = 'translate(12%)';  
+  slider.style.transform = 'translate(12.38%)';  
   
 });
 
@@ -51,7 +52,7 @@ const getCarousalData = async ()=>{
 const renderImage = async () => {
   let image = await getCarousalData();
   let html = "";
-  console.log(image.data);
+  // console.log(image.data);
   image.data.map(imgs => {
     let apiImages = `<img src="${imgs.backgroundImage}" >`;
 

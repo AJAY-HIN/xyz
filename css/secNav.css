@@ -1,4 +1,4 @@
-nav.secnavbar{
+/* nav.secnavbar{
     display: flex;
     background-color: white;
     padding-top:35px;
@@ -26,9 +26,7 @@ hr{
 }
 
 
-.menu{
-    margin-left: 350px;
-}
+
 
 .secli{
     color: #282c3f;
@@ -37,4 +35,40 @@ hr{
     margin-left:-35px;
     margin-right: 10px;
 }
+ */
 
+
+ div.scrollmenu {
+    background-color: white;
+    overflow: auto;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    padding: 20px 10%;
+    position: sticky;
+    z-index: 1;
+    top:0;
+    width:90%;
+    border-bottom: 1px solid rgb(217, 215, 215);
+    padding-top: 35px;
+    padding-bottom: 5px;
+  }
+
+  .secNavList a{
+    position: relative;
+    left: 160px;
+    font-size: 17px;
+    font-weight: 100;
+  }
+
+
+  
+  div.scrollmenu a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+  }
+  
