@@ -1,41 +1,4 @@
-/* nav.secnavbar{
-    display: flex;
-    background-color: white;
-    padding-top:35px;
-    padding-bottom: 10px;
-}
 
-.counts{
-    position: relative;
-    font-size: 22px;
-    left: 13%;
-}
-
-hr{
-    position: relative;
-    left:12%;
-    right: 12%;
-    width: 76%;
-    background-color: white;
-}
-
-
-.secnav-links{
-  display: flex;
-  align-items: center;
-}
-
-
-
-
-.secli{
-    color: #282c3f;
-    font-size: 14px;
-    font-weight: 100;
-    margin-left:-35px;
-    margin-right: 10px;
-}
- */
 
 
  div.scrollmenu {
@@ -43,32 +6,59 @@ hr{
     overflow: auto;
     white-space: nowrap;
     display: flex;
-    justify-content: space-around;
-    align-items: baseline;
-    padding: 20px 10%;
+    justify-content: flex-start;
+    padding: 14px;
     position: sticky;
-    z-index: 1;
+    z-index: 2;
     top:0;
-    width:90%;
     border-bottom: 1px solid rgb(217, 215, 215);
-    padding-top: 35px;
-    padding-bottom: 5px;
+    
   }
 
-  .secNavList a{
-    position: relative;
-    left: 160px;
-    font-size: 17px;
-    font-weight: 100;
+  h1.h1Counts{
+    color: rgb(73, 73, 73);
   }
+
+
+  .secNavList {
+    position: relative;
+    font-size: 16px;
+    font-weight: 100;
+    left: 25em;
+    top:14px
+  }
+
+.h1Counts{
+  position: absolute;
+  left: 3em;
+  bottom: 0.3em;
+}
 
 
   
   div.scrollmenu a {
     display: inline-block;
-    color: black;
+    color: rgb(117, 112, 112);
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     text-decoration: none;
   }
+
+  div.secNavList .secNavSearch {
+  color: black;
+  font-weight: 600;
+  visibility: hidden;
+  
+}
+
+
+  @media screen and (max-width:1100px) {
+     
+
+      div.scrollmennu a{
+        position: relative;
+        left: 0;
+      }
+  }
+
   

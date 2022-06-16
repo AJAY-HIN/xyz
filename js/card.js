@@ -2,8 +2,6 @@
 
 let outWrapper = document.querySelector('.outWrapper');
 let  i = 1;
-let loadMore = function(){
-    for(let i=1; i<=(50/10); i++){
         const getData = async ()=>{
             let response = await fetch(`http://training.panorbitprojects.com/api/RestaurantsList/?page=${i}`);
             let data = await response.json();
@@ -18,12 +16,12 @@ let loadMore = function(){
                   <div class="card">
                     <img src="${ele.image}" alt="foodimage">
                     <div class="details">
-                      <h2>${ele.name}</h2>
+                      <h3>${ele.name}</h3>
                       <p>${ele.items}</p>
                       <div class="rating">
-                      <button><i class="fa fa-star"></i>${ele.rating}</button>
-                      <samp>.${ele.deliveryTime}</samp>
-                      <samp>.${ele.costForTwo}</samp>
+                      <button><i class="fa fa-star"></i> ${ele.rating}</button>
+                      <p><span>. </span>${ele.deliveryTime}</p>
+                      <p><span>. </span>${ele.costForTwo}</p>
                       </div>
                     </div>
                 </div>
@@ -31,29 +29,33 @@ let loadMore = function(){
                   <h3><i class="fa-solid fa-badge-percent"></i>${ele.offer}</h3>
                 </div>
                 </div>
+                <hr/>
                 <div class="quickView">
-                  <h3>Quick view</h2>
+                  <h4>Quick view</h2>
                 </div>
               </div> 
               </div>           
                 `;
                 html += newhtml;
             })
-            document.querySelector(".outWrapper").insertAdjacentHTML('beforebegin', html)
+            document.querySelector(".outWrapper").innerHTML += html;
+          
         }
         getData();
-    }
-  }
 
-  outWrapper.addEventListener('scroll', function(){
-      if(cardWrapper.scrollTop + cardWrapper.clientHeight  >= cardWrapper.scrollHeight) {
-        loadMore();
+
+
+
+
+  window.addEventListener('scroll', function(){
+
+      if(window.scrollY + window.innerHeight  >=  document.documentElement.scrollHeight + 10) {
+        i++;
+        setTimeout(getData(),2000);
       }
     });
 
-    loadMore();
 
 
 
 
-console.log('ajhfiugdsfbjgkisdgfsee')

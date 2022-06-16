@@ -1,33 +1,38 @@
-div.myData{
+div.outWrapper{
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    margin-left: 7%;
-    margin-right: 7%;
+    margin-top: 15px;
+    margin-left: 2.5%; 
     /* font-weight: 300; */
-    padding: 18px;
+    
+
 }
 
-.outWrapper{
-    margin: 15px;
-    padding: 5px;
-}
+/* .outWrapper{
+    margin: 8px;
+    display: flex;
+} */
 
+
+p span{
+    text-decoration: none;
+}
 
 .card{
-    border-bottom: 1px solid #686b78;
-    width: 254px;
-    height: 240px;
+    border-bottom: 1px solid #c7c9d1;
+    width: 260px;
+    height: 250px;
     margin-top: 10px;
     
 }
 
-.cardWrapper{
-    margin: 1%;
-}
+/* .cardWrapper{
+    margin-right: -5%;
+} */
 
 .cardWrapper:hover{
-    box-shadow:0 4px 7px 0 rgba(95, 95, 98, 0.6)
+    box-shadow:0px 2px 4px 0 rgb(124, 124, 128)
 }
 
 .cardWrapper:hover .quickView{
@@ -36,35 +41,54 @@ div.myData{
 
 .cardWrapper:hover .shaddowBorder{
     border-width: 80%;
-    border-bottom: 1px solid rgb(172, 169, 169);
+    /* border-bottom: 1px solid rgb(172, 169, 169); */
 }
 
+.cardWrapper:hover hr {
+    visibility: visible;
+}
+
+hr{
+    width:90%;
+    margin-left: 5%;
+    visibility :hidden;
+    background-color: #c7c9d1;
+    opacity: 0.4;
+    
+}
+
+
+
 div.details p{
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 100;
+    padding-top: 10px;
     color: rgb(87, 84, 84);
 
 }
 
-
+/* 
 h3{
-    padding: 10px;
-}
+    padding: 0.4em;
+} */
 
 .card img{
     position: relative;
-    bottom:1.3em;
-    right: 1.9em;
+    bottom:0.4em;
+    left:3px;
     height: 160px;
-    width: 254px;
+    width: 16em;
+    padding-bottom: 12px;
 }
 
 .details{
     position: relative;
-    bottom: 28px;
+    top: -1em;
+    line-height: 90%;
     font-family:  ProximaNova,arial,Helvetica Neue,sans-serif;
     font-weight: 100;
     font-size: small;
+
 }
 
 
@@ -73,37 +97,85 @@ h3{
     padding: 10px;  
 }
 
-div.disccount {
+ .disccount  h3 {
     color: #8a584f;
-    padding-top: 14px;
+    margin-bottom: -9px;
+    margin-top: 5px;
+    font-size:16px;
+    padding: 7px;
 }
 
 
 
     .quickView{
-        color: #686b78;
+        color: #3959e9;
         text-align: center;
-        padding: 5px;
         visibility: hidden;
+        padding: 12px;
     }
 
     .rating{
         display: flex;
-        justify-content: space-around;
-        align-items: flex-end;
-        position: relative;
-        top: 10px;
-        padding-bottom: -15px;
+       justify-content: flex-start;
+        align-items: baseline;
+        font-size: 11px;
+        padding-top: 27px;
+    }
+
+
+    .rating p{
+        padding-left: 36px;
     }
 
     .rating button{
-        background-color: rgb(15, 186, 15);
+        background-color: rgba(15, 186, 15, 0.644);
         border-style: none;
-        padding: 2px  5px;
-        border-radius: 4px;
+        padding: 4px  7px;
+        border-radius: 3px;
         color: aliceblue;
+        font-size: 12px;
     }
 
-    .rating samp{
-        font-weight: 400;
+
+
+    @media screen and (max-width:500px){
+
+        div.outWrapper{
+               margin: 0 auto;         
+        
+        }
+        
+
+    }
+
+
+
+
+    @media screen and (max-width:931px){
+
+        div.outWrapper{
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            
+        
+        }
+        
+
+    }
+
+
+
+
+    
+
+    @media screen and (max-width:1273px) {
+
+        div.outWrapper{
+            display: flex;
+            justify-content: flex-start;
+            margin: 0  auto;
+        }
+        
+
     }

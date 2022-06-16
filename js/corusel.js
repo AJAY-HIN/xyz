@@ -12,10 +12,7 @@ next.addEventListener('click', function() {
 });
 
 prev.addEventListener('click', function() {
-  // if (direction !== -1) {
-  //   direction = 1;
-  //   slider.appendChild(slider.lastElementChild);
-  // }
+
   direction = 1;
   carousel.style.justifyContent = 'center';    
   slider.style.transform = 'translate(12.38%)';  
@@ -34,9 +31,9 @@ slider.addEventListener('transitionend', function() {
   slider.style.transition = 'none';
   slider.style.transform = 'translate(0)';
   setTimeout(() => {
-    slider.style.transition = 'all 0.3s';
+    slider.style.transition = 'ease 0.6s';
   })
-}, false);
+});
 
 
 
@@ -54,7 +51,13 @@ const renderImage = async () => {
   let html = "";
   // console.log(image.data);
   image.data.map(imgs => {
-    let apiImages = `<img src="${imgs.backgroundImage}" >`;
+    let apiImages = `
+    <div style="poistion:relative; text-align:center; ">
+    <div class="carImage" style=" background-image:url(${imgs.backgroundImage});"> <h1>Flat 20% off</h1></div>
+    </div>
+    
+    
+    `;
 
     html += apiImages;
   });

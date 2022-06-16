@@ -19,30 +19,31 @@
   display: flex;
   z-index: 1;
   justify-content: space-between;
-  padding: 20px;
+  padding: 1.2em;
   background-color: white;
   color: black;
   box-shadow: rgba(6, 7, 8, 0.3) 0px 10px 10px -10px;
  }
 
  i{
-   padding-right: 5px;
+   padding-right: 0.3em;
+   font-size: large;
  }
 
  a{
-
+    position: relative;
+    left: 6em;
  }
 
-nav{
+/* nav{
   position: relative;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  /* margin: 15px; */
   margin: auto;
   
-}
+} */
 
  .nav-links a {
   color: black;
@@ -66,12 +67,12 @@ nav{
  .menu {
   display: flex;
   gap: 2.8em;
-  font-size: 15px;
+  font-size: 0.8rem;
   margin-right: 145px;
   font-family:  ProximaNova,arial,Helvetica Neue,sans-serif;
   letter-spacing: 0;
   font-kerning: auto;
-  margin-top: 12px;
+  margin-top: 0.4rem;
  }
 
  .menu li {
@@ -82,7 +83,7 @@ nav{
  #logo{
    display: flex;
    flex-direction: row;
-   margin-left: 100%;
+   margin-left: 8%;
 
  }
 
@@ -102,8 +103,8 @@ color: rgb(243, 126, 36);
    #slogo-img{
     position: absolute;
     width: 33px;
-    margin-left: 8% ;
-    margin-top: -111px;
+    margin-left: 3% ;
+    margin-top: -100px;
 
    }
 
@@ -168,6 +169,25 @@ margin-left: 9rem;
   transform: translateX(35%);
  }
  
+ }
+
+
+
+ @media screen and (max-width:475px){
+
+   #logo{
+     position: relative;
+     left:-11em;
+   }
+
+   .hamburger{
+     position: relative;
+     left:-6em;
+   }
+
+   #slogo-img{
+     display: none;
+   }
  }
 
 
