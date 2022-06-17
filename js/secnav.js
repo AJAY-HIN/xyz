@@ -20,11 +20,12 @@
 
 // window.onscroll = function(){shaddowVisible()};
 
-// function shaddowVisible(){
-//   // let sTop = window.screenTop;
-//   if(document.querySelector('.scrollmenu').style.scrollTop = '10px' ){
-//     document.querySelector('.secNavSearch').style.visibility = 'visible';
-//   }else{
-//     document.querySelector('.secNavSearch').style.visibility = 'hidden';
-//   }
-// }
+function shaddowVisible(){
+  if(document.querySelector('.scrollmenu').offsetTop <= window.scrollY ){
+    document.querySelector('.secNavSearch').style.visibility = 'visible';
+    document.querySelector('.scrollmenu').style.boxShaddow = "5px 10px 5px black inset";
+  }else{
+    document.querySelector('.secNavSearch').style.visibility = 'hidden';
+  }
+}
+

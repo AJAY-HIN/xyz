@@ -49,7 +49,7 @@ let  i = 1;
 
   window.addEventListener('scroll', function(){
 
-      if(window.scrollY + window.innerHeight  >=  document.documentElement.scrollHeight + 10) {
+      if(window.scrollY + window.innerHeight  >=  document.documentElement.scrollHeight - 10) {
         i++;
         setTimeout(getData(),2000);
       }
