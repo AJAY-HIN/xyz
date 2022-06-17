@@ -23,9 +23,11 @@
 function shaddowVisible(){
   if(document.querySelector('.scrollmenu').offsetTop <= window.scrollY ){
     document.querySelector('.secNavSearch').style.visibility = 'visible';
-    document.querySelector('.scrollmenu').style.boxShaddow = "5px 10px 5px black inset";
+    document.querySelector('.scrollmenu').style.zIndex = "2";
   }else{
     document.querySelector('.secNavSearch').style.visibility = 'hidden';
+    document.querySelector('.scrollmenu').style.zIndex = "0";
+
   }
 }
 

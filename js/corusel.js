@@ -11,6 +11,7 @@ next.addEventListener('click', function() {
   slider.style.transform = 'translate(-12.38%)';  
 });
 
+
 prev.addEventListener('click', function() {
 
   direction = 1;
