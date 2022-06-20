@@ -24,6 +24,7 @@ function shaddowVisible(){
   if(document.querySelector('.scrollmenu').offsetTop <= window.scrollY ){
     document.querySelector('.secNavSearch').style.visibility = 'visible';
     document.querySelector('.scrollmenu').style.zIndex = "2";
+    document.querySelector('.scrollmenu').style.transition = 'ease 0.7s';
   }else{
     document.querySelector('.secNavSearch').style.visibility = 'hidden';
     document.querySelector('.scrollmenu').style.zIndex = "0";
